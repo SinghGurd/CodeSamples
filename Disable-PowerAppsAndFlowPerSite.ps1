@@ -1,5 +1,6 @@
 
 # Get all your sites
+Connect-SPOService -Url <admin site url>
 $sites = Get-SPOSite -Limit All;
 $commitUpdates = $false;
 $log = @();
